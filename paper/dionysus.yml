@@ -1,0 +1,54 @@
+config-version: '1'
+verbose: false
+settings:
+  server-mod-name: Dionysus
+alternative-bed-mechanics: true
+max-processed-nbt-size: 80000
+entity_timeouts:
+  SNOWBALL: -1
+compression-level: -1
+disable-mojang-server-communication-in-offline-mode: false
+alternate-current-redstone: false
+nbt-compare-method: EQUAL
+map-decoration-limit: 10
+optimize-armourstands: true
+disable-duplicate-log: true
+chunk-overload-dupe:
+  allow: false
+  log: true
+improve-merge-checks: true
+compression:
+  zstd-compression: false
+  linear-region-files: false
+  chunk-compression-level: -1
+fair-natural-spawns: true
+sentry-dsn: ''
+tile-entity:
+  data-limit: 750
+  split-limit: 15000
+ai-limit:
+  bypass:
+    custom-name: true
+    tamable: true
+    spawner: true
+  monster:
+    tps: 10.0
+    player-count: 90
+  animal:
+    tps: 6.0
+    player-count: 120
+books:
+  enabled: true
+  max-processed-nbt-size: 8000
+# Optimizes projectile settings
+projectile:
+  max-loads-per-tick: 10
+  max-loads-per-projectile: 10
+redact-player-data: true
+fix-donkey-dupe: true
+use-alternate-keepalive: false
+no-chunks-past-world-border: true
+light-updates-max-ms-per-tick: 10
+enable-suffocation-optimization: true
+light-limit-chunk-unload: false
+tickless-block-placement: true
