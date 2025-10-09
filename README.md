@@ -6,3 +6,16 @@ this is a template velocity server with eaglercraft support. It also has nlogin 
 #### Forwarding
 
 If you're trying to self host but have no idea what you're doing, i recommend installing tailscale on the device youre selfhosting with, then running funnel on it so it can access the internet without having to port forward. https://tailscale.com/kb/1223/funnel
+
+#### Pico Limbo
+the version of picolimbo uploaded is for x86_64 linux os's. get the binary you need for your usecase at https://github.com/Quozul/PicoLimbo/releases
+
+#### Updating
+i might be too lazy to update some of this so if you wanna update it for me, upload the updated plugins and replace the versions set here. 
+
+Velocity-3.4.0-SNAPSHOT-541
+ViaBackwards-5.5.1-SNAPSHOT
+ViaRewind-4.0.10
+ViaRewind-Legacy-Support-1.5.3
+ViaVersion-5.5.1-SNAPSHOT
+PicoLimbo V1.6.0
