@@ -14,6 +14,8 @@
 /velocity/forwarding.secret
 /velocity/plugins/nlogin/nlogin.db
 /velocity/plugins/nlogin/logs
+/velocity/plugins/ncore
+/velocity/plugins/skinsrestorer
 
 /paper/cache
 /paper/logs
