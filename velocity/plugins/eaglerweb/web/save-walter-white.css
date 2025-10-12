@@ -1,0 +1,124 @@
+html,body {
+	background: #1ba11a url(img/tile.png) top left repeat;
+	font-family: Comic Sans,Comic Sans MS,cursive;
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+}
+ul li {
+	display: inline;
+}
+img {
+	border: none;
+}
+#walter-container {
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+	width: 965px;
+}
+#walter-container h1 {
+	color: #FFF;
+	font-family: times,helvetic,sans-serif;
+	font-size: 112px;
+	margin: 0;
+	padding-top: 12px;
+	
+}
+#walter-container h3 {
+	font-size: 40px;
+	font-weight: normal;
+	margin: 0;
+}
+#walter-container p {
+	font-weight: bold;
+	margin: 1em 50px;
+	line-height: 1.2em;
+	text-align: left;
+}
+#walter-container p.middle {
+	text-align: center;
+}
+#walter-container ul#second_row {
+	margin: 42px 0;
+}
+#walter-container ul#second_row li {
+	margin: 0px 18px;
+}
+#walter-container ul#second_row li img {
+	vertical-align: top;
+}
+#walter-container ul#fourth_row li {
+	margin: 40px 95px;
+}
+#walter-container #donate-container {
+	margin: 40px 0;
+}
+#walter-container #donations-so-far {
+	background: #000;
+	width: 840px;
+	height: 185px;
+	margin: 0 auto;
+	padding: 8px;
+}
+#donations-so-far p {
+	margin: 12px 0;
+}
+#donations-so-far #donation-counter {
+	margin-top: 32px;
+}
+#donations-so-far #donation-counter li {
+	background: #FFF;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 12px 6px;
+	vertical-align: middle;
+	text-align: center;
+	height: 50px;	
+}
+#donations-so-far #donation-counter li.push{
+	margin-left: 18px;
+}
+div.ribbons {
+	background: url(../images/bow_left.png) no-repeat 155px 70px;
+}
+div.ribbons p {
+	background: url(../images/bow_right.png) no-repeat 655px 70px;
+	padding: 22px;
+}
+.white {
+	color: #FFF;
+}
+.yellow {
+	color: #fff54f;
+}
+.dark-yellow {
+	color: #ffe107;
+}
+.small-copy {
+	font-size: 21px;
+}
+.medium-copy {
+	font-size: 25px;
+}
+.large-copy {
+	font-size: 42px;
+}
+.legal {
+	text-align:center;
+	padding-bottom:20px;
+}
+.legal a {
+	color:#fff;
+}
+.legal a + a {
+	margin-left:40px;
+}
+.copyright {
+	text-align:center;
+	font-size:12px;
+	padding-bottom:20px;
+}

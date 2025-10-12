@@ -15,9 +15,19 @@ settings:
   debug: false
   save-user-cache-on-stop-only: false
   sample-count: 12
-  moved-too-quickly-multiplier: 10.0
+  bungeecord: false
+  late-bind: false
+  player-shuffle: 0
   filter-creative-items: true
+  user-cache-size: 1000
+  int-cache-limit: 1024
   moved-wrongly-threshold: 0.0625
+  moved-too-quickly-multiplier: 10.0
+  item-dirty-ticks: 20
+  timeout-time: 60
+  restart-on-crash: true
+  restart-script: ./start.sh
+  netty-threads: 4
   attribute:
     maxHealth:
       max: 2048.0
@@ -25,16 +35,17 @@ settings:
       max: 2048.0
     attackDamage:
       max: 2048.0
-  bungeecord: false
-  late-bind: false
-  player-shuffle: 0
-  user-cache-size: 1000
-  item-dirty-ticks: 20
-  int-cache-limit: 1024
-  timeout-time: 60
-  restart-on-crash: true
-  restart-script: ./start.sh
-  netty-threads: 4
+commands:
+  tab-complete: 0
+  log: true
+  spam-exclusions:
+  - /skill
+  silent-commandblock-console: false
+  replace-commands:
+  - setblock
+  - summon
+  - testforblock
+  - tellraw
 messages:
   whitelist: You are not whitelisted on this server!
   unknown-command: Unknown command. Type "/help" for help.
@@ -42,17 +53,6 @@ messages:
   outdated-client: Outdated client! Please use {0}
   outdated-server: Outdated server! I'm still on {0}
   restart: Server is restarting
-commands:
-  tab-complete: 0
-  silent-commandblock-console: false
-  log: true
-  spam-exclusions:
-  - /skill
-  replace-commands:
-  - setblock
-  - summon
-  - testforblock
-  - tellraw
 advancements:
   disable-saving: false
   disabled:
@@ -63,18 +63,6 @@ stats:
 world-settings:
   default:
     verbose: true
-    merge-radius:
-      exp: 3.0
-      item: 2.5
-    view-distance: 6
-    arrow-despawn-rate: 1200
-    item-despawn-rate: 6000
-    enable-zombie-pigmen-portal-spawns: true
-    wither-spawn-sound-radius: 0
-    hanging-tick-frequency: 100
-    zombie-aggressive-towards-villager: true
-    nerf-spawner-mobs: false
-    dragon-death-sound-radius: 0
     mob-spawn-range: 4
     growth:
       cactus-modifier: 100
@@ -99,11 +87,13 @@ world-settings:
       monsters: 40
       misc: 32
       other: 64
-    max-tick-time:
-      tile: 50
-      entity: 50
-    squid-spawn-range:
-      min: 45.0
+    ticks-per:
+      hopper-transfer: 8
+      hopper-check: 1
+    hopper-amount: 1
+    random-light-updates: false
+    save-structure-info: true
+    dragon-death-sound-radius: 0
     seed-village: 10387312
     seed-feature: 14357617
     seed-monument: 10387313
@@ -116,11 +106,21 @@ world-settings:
       swim-multiplier: 0.01
       sprint-multiplier: 0.1
       other-multiplier: 0.0
-    ticks-per:
-      hopper-transfer: 8
-      hopper-check: 1
-    hopper-amount: 1
-    save-structure-info: true
     max-tnt-per-tick: 100
-    random-light-updates: false
+    max-tick-time:
+      tile: 50
+      entity: 50
+    squid-spawn-range:
+      min: 45.0
+    item-despawn-rate: 6000
+    merge-radius:
+      item: 2.5
+      exp: 3.0
+    view-distance: 6
+    arrow-despawn-rate: 1200
+    enable-zombie-pigmen-portal-spawns: true
+    wither-spawn-sound-radius: 0
+    hanging-tick-frequency: 100
+    zombie-aggressive-towards-villager: true
+    nerf-spawner-mobs: false
     max-entity-collisions: 8
