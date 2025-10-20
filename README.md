@@ -20,9 +20,9 @@ the version of picolimbo uploaded is for x86_64 linux os's. get the binary you n
 #### Updating
 i might be too lazy to update some of this so if you wanna update it for me, upload the updated plugins and replace the versions set here. 
 
-- Velocity: 3.4.0-SNAPSHOT-541  
-- ViaBackwards: 5.5.1-SNAPSHOT  
-- ViaRewind: 4.0.10  
+- Velocity: 3.4.0-SNAPSHOT-552  
+- ViaBackwards: 5.5.2-SNAPSHOT  
+- ViaRewind: 4.0.11
 - ViaRewind-Legacy-Support: 1.5.3  
-- ViaVersion: 5.5.1-SNAPSHOT  
-- PicoLimbo: V1.6.0  
+- ViaVersion: 5.5.2-SNAPSHOT  
+- PicoLimbo: V1.7.0  
