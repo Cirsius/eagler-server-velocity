@@ -4,6 +4,7 @@ action_bar = "Welcome to PicoLimbo!"
 default_game_mode = "spectator"
 hardcore = false
 fetch_player_skins = false
+reduced_debug_info = false
 
 [forwarding]
 method = "NONE"
@@ -12,6 +13,10 @@ method = "NONE"
 spawn_position = [
     0.0,
     320.0,
+    0.0,
+]
+spawn_rotation = [
+    0.0,
     0.0,
 ]
 dimension = "end"
@@ -28,7 +33,7 @@ min_y = -64
 teleport_message = "<red>You have reached the bottom of the world.</red>"
 
 [server_list]
-max_players = 20
+max_players = 67
 message_of_the_day = "A Minecraft Server"
 show_online_player_count = true
 server_icon = "server-icon.png"
