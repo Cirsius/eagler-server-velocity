@@ -2,6 +2,13 @@
 
 this is a template velocity server with eaglercraft support. It also has nlogin and limbo setup, so its a good base if you're trying to self host a network. you can replace dionysus with whatever version you want, i just chose dionysus because it has really good performance for 1.12.2 anarchy servers which a good amount of people are trying to run for school servers. 
 
+#### Customizing
+
+you can change the text for the login text at ``velocity/nlogin/lang/messages_en.yml``
+
+if you wanna change the pause menu links and logos and whatnot, do that in ``/velocity/plugins/eaglerxserver/pause_info.yml``
+
+iof you wanna change the web page from the walter white one, do it at ``velocity/eaglerweb/web`` or you can remove the eaglerweb plugin entirely. 
 
 #### Forwarding
 

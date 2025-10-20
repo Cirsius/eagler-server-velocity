@@ -1,6 +1,6 @@
 # Default value is false, if pause menu customization should be enabled on
 # supported clients or not
-enable_custom_pause_menu = false
+enable_custom_pause_menu = true
 
 # Defines properties of the "Server Info" button, which is always hidden unless
 # pause menu customization is enabled
@@ -67,7 +67,7 @@ enable_custom_pause_menu = false
 	# Sets the text that should be displayed on the button
 	button_text = "Discord"
 	# Defines the URL to open when the button is pressed
-	button_url = "https://invite url here"
+	button_url = "https://discord.com/invite/86KNR3TyFB"
 # Section, map of custom images to display on the pause menu, paths are relative
 # to this config file.
 [custom_images]
@@ -87,7 +87,7 @@ enable_custom_pause_menu = false
 	icon_discord_R = ""
 	icon_disconnect_L = ""
 	icon_disconnect_R = ""
-	icon_background_pause = "test_image.png"
-	icon_background_all = "test_image.png"
-	icon_watermark_pause = ""
+	icon_background_pause = ""
+	icon_background_all = ""
+	icon_watermark_pause = "server-icon.png"
 	icon_watermark_all = ""
