@@ -509,7 +509,7 @@ passwords:
 
     # Defines whether brute-force attacks will be punished automatically.
     # - After too many incorrect attempts, the suspect IP address will be blocked.
-    auto-punish: true
+    auto-punish: false
 
     # Sets the punishment time for a suspected brute force attack (in minutes).
     punishment-duration: 15
@@ -556,7 +556,7 @@ security:
   ip-limit:
     # Sets whether the per-IP account limiter should be used.
     # - This option can prevent fake accounts.
-    enable: true
+    enable: false
 
     # Sets the maximum number of records per IP address.
     limit: 3
