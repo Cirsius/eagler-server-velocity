@@ -1,0 +1,73 @@
+{
+  debug: false,
+  messages: {
+    kick: [
+      '<red>This %block_type% is %not_allowed_alt%!</red>',
+      '<dark_gray>»</dark_gray> <gray>%blocked_value%</gray> <dark_gray>«</dark_gray>',
+      '',
+      '%action%',
+      '',
+      '<aqua>Think this is a mistake? Join our discord:</aqua>',
+      '<blue>discord.gg/changethisintheconfig</blue>'
+    ],
+    motd: [
+      '<red>This %block_type% is %not_allowed%!</red>',
+      '<dark_gray>»</dark_gray> <gray>%blocked_value%</gray>'
+    ],
+    actions: {
+      generic: '<gold>Please switch to a different %block_type%.</gold>',
+      player_name: '<gold>Please change your %block_type%.</gold>',
+      ip_address: '<gold>Please contact staff for assistance.</gold>'
+    }
+  },
+  blacklist: {
+    origins: [
+      '.*eaglerhackedclients\\.vercel\\.app.*',
+      '.*eaglerhacks\\.github\\.io.*',
+      '.*mcproject\\.vercel\\.app.*',
+      '.*wurst-b2\\.vercel\\.app.*',
+      '.*flqmedev\\.github\\.io.*',
+      '.*wurst2\\.vercel\\.app.*',
+      '.*dhyeybg7\\.vercel\\.app.*',
+      '.*uec\\.vercel\\.app.*',
+      '.*valux-game\\.github\\.io.*',
+      '.*project516\\.dev.*'
+    ],
+    brands: [
+      '.*dragonx.*',
+      '.*piclient.*',
+      '.*justin.*',
+      '.*wurstx.*',
+      '.*moonlight.*'
+    ],
+    player_names: [
+      'Admin'
+    ],
+    ip_addresses: [
+      '192.0.2.0/24'
+    ]
+  },
+  discord: {
+    enabled: false,
+    webhook_urls: [
+    ],
+    send_ips: true
+  },
+  update_checker: {
+    enabled: true,
+    allow_snapshots: false,
+    check_timer: 3600,
+    auto_update: true
+  },
+  blacklist_http_share: {
+    enabled: false,
+    http_port: 8080,
+    listen_addr: '0.0.0.0'
+  },
+  blacklist_to_whitelist: false,
+  block_undefined_origin: false,
+  bStats: true,
+  logFile: true,
+  // DO NOT CHANGE
+  config_version: 1
+}

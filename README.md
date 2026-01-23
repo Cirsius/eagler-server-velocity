@@ -4,7 +4,7 @@ this is a template velocity server with eaglercraft support. It also has nlogin,
 
 ### Customizing
 
-i added anticheat, so if you want hacking, remove ``velocity/plugins/OriginBlacklist.jar``, and``paper/plugins/grimac-bukkit-2.3.72.jar``. also enabled paper's antixray, so disable that if you want aswell ``paper/paper.yml``
+i added anticheat, so if you want to allow hacking, remove ``velocity/plugins/OriginBlacklist-X.X.X.jar``, and``paper/plugins/LightningGrim-bukkit-X.X.X.jar``. also enabled paper's antixray, so disable that if you want aswell ``paper/paper.yml``
 
 you can change the text for the login text at ``velocity/nlogin/lang/messages_en.yml``
 
@@ -17,11 +17,27 @@ if you wanna change the web page from the walter white one, do it at ``velocity/
 If you're trying to self host but have no idea what you're doing, i recommend installing tailscale on the device youre selfhosting with, then running funnel on it so it can access the internet without having to port forward. https://tailscale.com/kb/1223/funnel
 
 ### Updating
-i might be too lazy to update some of this so if you wanna update it for me, upload the updated plugins and replace the versions set here. 
+i might be too lazy to update some of this so if you wanna update it for me, upload the updated jars and replace the versions set here. 
 
-- Velocity: 3.4.0-SNAPSHOT-559
-- ViaBackwards: 5.5.2-SNAPSHOT  
-- ViaRewind: 4.0.11
-- ViaRewind-Legacy-Support: 1.5.3  
-- ViaVersion: 5.5.2-SNAPSHOT  
-- PicoLimbo: V1.9.1
+**Server Versions**
+- Velocity: 3.4.0-SNAPSHOT-561
+- Dionysus: 0.1.17
+- PicoLimbo: 1.10.1
+
+**Proxy Plugin Versions**
+- EaglerXServer: 1.0.8
+- EaglerXRewind: 1.5.2+1.0.2
+- EaglerWeb: 1.0.0
+- EaglerMOTD: 1.0.0
+- OriginBlacklist: 2.0.6+d8fa2b1
+- SkinsRestorer: 15.9.3
+- nLogin: 10.4.25
+
+**Paper Plugin Versions**
+- EaglerXBackendRPC: 1.0.0
+- ViaVersion: 5.7.1-SNAPSHOT+897
+- ViaBackwards: 5.7.1-SNAPSHOT+544
+- ViaRewind: 4.0.14-SNAPSHOT+322
+- ViaRewind-Legacy-Support: 1.5.5-SNAPSHOT+55
+- ViaAprilFools: 4.0.8-SNAPSHOT+132
+- LightningGrim: 2.3.73-cd86c14

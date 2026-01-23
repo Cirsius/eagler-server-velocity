@@ -190,7 +190,7 @@ debug_log_client_brands = false
 	# Default value is true, set to false to make the Five Nights At Winston's skins
 	# render with regular player models, can be used to avoid confused people
 	# complaining about hitboxes.
-	enable_fnaw_skin_models_global = true
+	enable_fnaw_skin_models_global = false
 	# If enable_fnaw_skin_models_global is false, sets the list of servers (by name)
 	# where the FNAW should be enabled
 	enable_fnaw_skin_models_servers = []
