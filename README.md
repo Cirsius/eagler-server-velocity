@@ -4,7 +4,7 @@ this is a template velocity server with eaglercraft support. It also has nlogin,
 
 ### Customizing
 
-i added anticheat, so if you want to allow hacking, remove ``velocity/plugins/OriginBlacklist-X.X.X.jar``, and``paper/plugins/LightningGrim-bukkit-X.X.X.jar``. also enabled paper's antixray, so disable that if you want aswell ``paper/paper.yml``
+i added anticheat, so if you want to allow hacking, remove ``velocity/plugins/OriginBlacklist-X.X.X.jar``, and``paper/plugins/grimac-bukkit-X.X.X.jar``. also enabled paper's antixray, so disable that if you want aswell ``paper/paper.yml``
 
 you can change the text for the login text at ``velocity/nlogin/lang/messages_en.yml``
 
