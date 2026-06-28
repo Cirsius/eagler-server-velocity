@@ -1,0 +1,209 @@
+#
+# Set the priority of this profile.
+# If there are multiple profiles (files) will they be sorted by priority, starting with highest.
+#
+# Read more: https://asl.andre601.ch/profiles/options/priority/
+#
+priority: 0
+
+#
+# Set condition(s) that should return true to display this profile.
+# This allows you to create profiles to only show for specific scenarios (i.e. player is banned).
+#
+# 'AND'/'&&' and 'OR'/'||' can be used to chain together multiple conditions.
+#
+# Removing the condition option or setting it to an empty String will be treated as a true condition being returned.
+#
+# Read more: https://asl.andre601.ch/profiles/options/condition
+#
+condition: ''
+
+#
+# Set one or multiple profiles.
+#
+# A profile can contain the same options as used in the file itself, except for priority and condition.
+# If multiple entries are present, a random one will be selected. Any options set in the selected profile will override
+# any existing option in the file.
+#
+# Example: The below profile configuration will randomly change the MOTD between two types, but keep the Hover text
+#          the same.
+#
+# When not present or empty (profiles: []), no profiles will be used and global options from the file will be used instead.
+#
+# Read more: https://asl.andre601.ch/profiles/options/profiles
+#
+profiles:
+
+#
+# Set the "Message of the day" to display.
+# This option supports RGB colors for 1.16+ Servers and clients. More advanced MiniMessage features such as <gradient>
+# can be used for further styling the text.
+#
+# <center> can be put at the start of a line to have AdvancedServerList automatically center the text as good as
+# possible.
+#
+# Only the first two lines will be considered and any additional one is ignored.
+#
+# When not present or empty (motd: []), no MOTD will be set.
+#
+# Read more: https://asl.andre601.ch/profiles/options/motd
+#
+motd:
+  - '<b><dark_red>sigma ahh server</dark_red></b>'
+
+#
+# Set the Favicon (image on the left of a server entry) to display.
+# This option supports three types of input:
+#
+#   1. Filename, including the .png extension, matching a filename in the favicons folder of the plugin.
+#      - 'random' can be used to have AdvancedServerList select a random image from the favicons folder every time
+#        the server is pinged.
+#   3. URL pointing to an image.
+#   4. Player name, UUID or a placeholder that returns either.
+#      - https://mc-heads.net will be used to retrieve an image of the provided name/UUID.
+#
+# Any image below or above 64x64 pixels will be resized according to the faviconResizeMode option in the config.yml.
+#
+# If not present or empty (favicon: ''), defaults to not modifying the favicon.
+#
+# Read more: https://asl.andre601.ch/profiles/options/favicon
+#
+# "The favicon isn't showing!"
+#   This is a side effect of using either URLs or player names/UUIDs for the favicon.
+#   These types require AdvancedServerList to create a new favicon object from scratch. This action takes a significant
+#   amount of time, which can cause the server to show with a huge ping.
+#   To avoid this is this action performed asynchronously. This means that the plugin doesn't wait for the favicon to
+#   be created before continuing, which can result in no favicon being available when it is done handling the ping.
+#   This should only happen for the first ping of a player and subsequent pings should display the favicon, if the
+#   pings are done within the configured cache time (See 'faviconCacheTime' in the config.yml).
+#
+favicon: 'server-icon.png'
+
+#
+# Contains options for modifying the player count (Text displaying <online>/<max>).
+#
+# Read more: https://asl.andre601.ch/profiles/options/playercount
+#
+playerCount:
+  #
+  # Set whether the Player count should be hidden.
+  # When set to true, the player count will be displayed as '???' instead of the usual '<online>/<max>' and all other
+  # playerCount options, except for extraPlayers and maxPlayers, will be ignored.
+  #
+  # If not present, defaults to false.
+  #
+  # Read more: https://asl.andre601.ch/profiles/options/playercount/hideplayers
+  #
+  hidePlayers: false
+  #
+  # Set whether the List of players is shown when hovering over the player count.
+  # Setting this to true will also make the plugin ignore the hover option below.
+  #
+  # If not present, defaults to false.
+  #
+  # Read more: https://asl.andre601.ch/profiles/options/playercount/hideplayershover
+  #
+  hidePlayersHover: false
+  #
+  # Set the lines shown when the player hovers over the player count.
+  # Unlike the MOTD option does this one only support basic color and formatting codes. Any RGB colors will be
+  # down-sampled to the nearest matching color.
+  #
+  # If not present or empty (hover: []), defaults to not modifying the hover.
+  #
+  # Read more: https://asl.andre601.ch/profiles/options/playercount/hover
+  #§
+  hover:
+    - '<i><dark_red>w speed</dark_red></i>'
+  #
+  # Set the text that should be displayed instead of the default '<online>/<max>' text.
+  #
+  # Using this option will show the server as "outdated" to the client (Have the ping icon crossed out).
+  # This cannot be fixed and would require Mojang to change stuff.
+  #
+  # If not present or empty (text: ''), defaults to not modifying the text.
+  #
+  # Read more: https://asl.andre601.ch/profiles/options/playercount/text
+  #
+  text: ''
+  #
+  # The extraPlayers feature allows to set a number that should be added to the current online players and then be
+  # used as the "max" player count.
+  #
+  # Using this feature will modify the ${server playersMax} placeholder, except for usage in the condition option.
+  #
+  # Read more: https://asl.andre601.ch/profiles/options/playercount/extraplayers
+  #
+  extraPlayers:
+    #
+    # Set whether the extraPlayers feature should be enabled or not.
+    # When set to true, the max players count will be modified to be the number of online players with the 'amount'
+    # value added to it.
+    #
+    # If not present, defaults to false.
+    #
+    # Read more: https://asl.andre601.ch/profiles/options/playercount/extraplayers#enabled
+    #
+    enabled: false
+    #
+    # Set the number that should be added to the online player count to then use as the new max player count.
+    # Placeholders resolving to numbers can be used here.
+    #
+    # Example: Setting this to 1 will result in ${server playersMax} displaying 11 while 10 players are online,
+    #          9 when 8 are online and so on.
+    #
+    # If not present, defaults to 0.
+    #
+    # Read more: https://asl.andre601.ch/profiles/options/playercount/extraplayers#amount
+    #
+    amount: 0
+  #
+  # The maxPlayers feature allows to set a number to use as the max player count to display.
+  #
+  # Using this feature will modify the ${server playersMax} placeholder, except for usage in the condition option.
+  #
+  # Read more: https://asl.andre601.ch/profiles/options/playercount/maxplayers
+  #
+  maxPlayers:
+    #
+    # Set whether the maxPlayers feature should be enabled or not.
+    # When set to true, the max player count will be set to the 'amount' value.
+    #
+    # If not present, defaults to false.
+    #
+    # Read more: https://asl.andre601.ch/profiles/options/playercount/maxplayers#enabled
+    #
+    enabled: false
+    #
+    # Set the number that should be used as the new max players count.
+    # Placeholders resolving to numbers can be used here.
+    #
+    # If not present, defaults to 0.
+    #
+    # Read more: https://asl.andre601.ch/profiles/options/playercount/maxplayers#amount
+    #
+    amount: 0
+  #
+  # The onlinePlayers feature allows to set a number to use as the online player count to display.
+  #
+  # Read more: https://asl.andre601.ch/profiles/options/playercount/onlineplayers
+  #
+  onlinePlayers:
+    #
+    # Set whether the onlinePlayers feature should be enabled or not.
+    # When set to true, the max player count will be set to the 'amount' value.
+    #
+    # If not present, defaults to false.
+    #
+    # Read more: https://asl.andre601.ch/profiles/options/playercount/onlineplayers#enabled
+    #
+    enabled: false
+    #
+    # Set the number that should be used as the new online players count.
+    # Placeholders resolving to numbers can be used here.
+    #
+    # If not present, defaults to current online player count.
+    #
+    # Read more: https://asl.andre601.ch/profiles/options/playercount/onlineplayers#amount
+    #
+    amount: 0

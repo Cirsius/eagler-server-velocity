@@ -128,6 +128,7 @@ debug_log_client_brands = false
 	protocol_v4_allowed = true
 	# If v5 clients should be allowed to join.
 	protocol_v5_allowed = true
+
 # Settings for the eagler skins and capes service, and for the skin cache
 # database.
 [skin_service]
@@ -190,7 +191,7 @@ debug_log_client_brands = false
 	# Default value is true, set to false to make the Five Nights At Winston's skins
 	# render with regular player models, can be used to avoid confused people
 	# complaining about hitboxes.
-	enable_fnaw_skin_models_global = false
+	enable_fnaw_skin_models_global = true
 	# If enable_fnaw_skin_models_global is false, sets the list of servers (by name)
 	# where the FNAW should be enabled
 	enable_fnaw_skin_models_servers = []
@@ -198,6 +199,12 @@ debug_log_client_brands = false
 	# apply events on vanilla players to refresh their skins, usually required for
 	# SkinsRestorer skins to display properly to eagler clients.
 	enable_skinsrestorer_apply_hook = true
+	# Default value is false, if the skin cache should always use a pool of multiple
+	# connections even when skin_cache_db_sqlite_compatible is true, you don't want
+	# want to enable this unless you're using the SQLite compatible syntax feature
+	# with a non-embedded database.
+	skin_cache_db_force_connection_pool = false
+
 # Settings for the eagler voice chat service.
 [voice_service]
 	# Default value is false, if the voice service should be enabled, using voice chat
@@ -226,6 +233,7 @@ debug_log_client_brands = false
 	# Default value is 600, sets the rate limit per minute for players to exchange
 	# WebRTC descriptions and ICE candidates once handshaking.
 	voice_ice_ratelimit = 600
+
 # Settings for the eagler update certificate service.
 [update_service]
 	# Default value is true, if relaying certificates for the client update system
@@ -250,6 +258,7 @@ debug_log_client_brands = false
 	# Default value is 28800 seconds, defines how often to check the URL list for
 	# updated certificates
 	check_for_update_every = 28800
+
 # Settings for the eagler server update checker, please keep your server updated!
 [update_checker]
 	# Default value is true, if EaglerXServer should check for plugin updates from

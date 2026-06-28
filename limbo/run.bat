@@ -1,3 +1,3 @@
 @echo off
-java -jar picolimbo_v1.10.1.jar
+java -jar pico_limbo_java_wrapper_v1.13.1.jar
 pause

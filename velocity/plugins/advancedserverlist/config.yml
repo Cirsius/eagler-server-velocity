@@ -1,0 +1,150 @@
+#
+# Used for when AdvancedServerList doesn't have a cached player to use for player placeholders.
+#
+unknownPlayer:
+  #
+  # The name to use.
+  #
+  # Default: Anonymous
+  #
+  name: "Anonymous"
+  #
+  # The UUID to use.
+  #
+  # Default: 606e2ff0-ed77-4842-9d6c-e1d3321c7838 (UUID of MHF_Question).
+  #
+  uuid: "606e2ff0-ed77-4842-9d6c-e1d3321c7838"
+
+#
+# Should the Caching of players be disabled?
+#
+# When set to true will no player joining the server be cached and saved to the playercache.json file.
+# This will also cause placeholders using a cached player such as ${player name} to no longer work.
+#
+# Default: false
+#
+disableCache: false
+
+#
+# Should AdvancedServerList check for new versions?
+#
+# When set to true will AdvancedServerList look for a new update on startup and repeat that check
+# every 12 hours after that.
+# It uses Modrinth to check for updates.
+#
+# Default: true
+#
+checkUpdates: true
+
+#
+# Should debug mode be enabled?
+#
+# Additional messages prefixed with [DEBUG] will be printed in the console when this option is set
+# to true.
+# Enabling this option is only recommended for when you have problems, or have been told to enable
+# it by the plugin developer, as it can otherwise spam your console.
+#
+# Default: false
+#
+debug: false
+
+#
+# Should the "ASL" ASCI art be displayed on plugin startup?
+# Setting this to false will hide the banner.
+#
+# Default: true
+#
+printBanner: true
+
+#
+# Sets how long Favicons should be cached. Value is in minutes with the lowest possible value being 1.
+#
+# This option only affects dynamic favicons created from a placeholder or URL. Local favicons will
+# not be affected.
+#
+# Default: 1
+#
+faviconCacheTime: 1
+
+#
+# Sets how AdvancedServerList should handle the size and positioning of images for favicons.
+#
+# Available options:
+#
+#   - resize: Resizes the image to 64x64 pixels if it isn't these dimensions already.
+#   - center: Doesn't resize the image, but instead tries to center it as good as possible in a 64x64 area.
+#   - none:   Doesn't resize the image and leaves it positioned at x 0 and y 0 (top-left) of the 64x64 area.
+#
+# Setting any not listed option or leaving this blank/removing it sets the option to resize.
+#
+faviconResizeStrategy: 'resize'
+
+#
+# Options to disable while the Maintenance Plugin is present and Maintenance Mode is active.
+#
+# Should an option be removed from this section will AdvancedServerList continue to set it, as if
+# the Maintenance plugin isn't active.
+#
+disableDuringMaintenance:
+  #
+  # Whether MOTD changing should be disabled while Maintenance mode is active.
+  #
+  # Default: true
+  #
+  motd: true
+  #
+  # Whether favicon changing should be disabled while Maintenance mode is active.
+  #
+  # Default: true
+  #
+  favicon: true
+  #
+  # Whether player hiding should be disabled while Maintenance mode is active.
+  #
+  # Default: true
+  #
+  hidePlayers: true
+  #
+  # Whether hiding player list on hover should be disabled while Maintenance mode is active.
+  #
+  # Default: true
+  #
+  hidePlayersHover: true
+  #
+  # Whether player count text changing should be disabled while Maintenance mode is active.
+  #
+  # Default: true
+  #
+  playerCountText: true
+  #
+  # Whether player count hover changing should be disabled while Maintenance mode is active.
+  #
+  # Default: true
+  #
+  playerCountHover: true
+  #
+  # Whether the extra players feature should be disabled while Maintenance mode is active.
+  #
+  # Default: true
+  #
+  extraPlayers: true
+  #
+  # Whether the max players feature should be disabled while Maintenance mode is active.
+  #
+  # Default: true
+  #
+  maxPlayers: true
+  #
+  # Whether the online players feature should be disabled while Maintenance mode is active.
+  #
+  # Default: true
+  #
+  onlinePlayers: true
+
+#
+# DO NOT EDIT!
+#
+# This is used internally to determine if the config needs to be migrated.
+# Changing or even removing this option could result in your config being broken.
+#
+configVersion: 10

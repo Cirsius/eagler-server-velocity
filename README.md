@@ -10,8 +10,6 @@ you can change the text for the login text at ``velocity/nlogin/lang/messages_en
 
 if you wanna change the pause menu links and logos and whatnot, do that in ``/velocity/plugins/eaglerxserver/pause_info.yml``
 
-if you wanna change the web page from the walter white one, do it at ``velocity/eaglerweb/web`` or you can remove the eaglerweb plugin entirely. 
-
 ### Forwarding
 
 If you're trying to self host but have no idea what you're doing, i recommend installing tailscale on the device youre selfhosting with, then running funnel on it so it can access the internet without having to port forward. https://tailscale.com/kb/1223/funnel
@@ -20,24 +18,22 @@ If you're trying to self host but have no idea what you're doing, i recommend in
 i might be too lazy to update some of this so if you wanna update it for me, upload the updated jars and replace the versions set here. 
 
 **Server Versions**
-- Velocity: 3.4.0-SNAPSHOT-561
+- Velocity: 3.5.0-SNAPSHOT-605
 - Dionysus: 0.1.17
-- PicoLimbo: 1.10.1
+- PicoLimbo: v1.13.1
 
 **Proxy Plugin Versions**
-- EaglerXServer: 1.0.8
-- EaglerXRewind: 1.5.2+1.0.2
-- EaglerWeb: 1.0.0
-- EaglerMOTD: 1.0.0
-- OriginBlacklist: 2.0.6+d8fa2b1
-- SkinsRestorer: 15.9.3
-- nLogin: 10.4.25
+- EaglerXServer: 1.1.0
+- EaglerXRewind: 1.5.2+1.0.3
+- OriginBlacklist: 2.0.10
+- SkinsRestorer: 15.12.3
+- nLogin: v2.0.17+ef3c24
 
 **Paper Plugin Versions**
-- EaglerXBackendRPC: 1.0.0
-- ViaVersion: 5.7.1-SNAPSHOT+897
-- ViaBackwards: 5.7.1-SNAPSHOT+544
-- ViaRewind: 4.0.14-SNAPSHOT+322
-- ViaRewind-Legacy-Support: 1.5.5-SNAPSHOT+55
-- ViaAprilFools: 4.0.8-SNAPSHOT+132
-- LightningGrim: 2.3.73-cd86c14
+- EaglerXBackendRPC: 1.1.0
+- ViaVersion: 5.10.0
+- ViaBackwards: 5.10.0
+- ViaRewind: 4.1.2
+- ViaRewind-Legacy-Support: 1.5.4
+- ViaAprilFools: 4.2.1
+- GrimAC: 2.3.74-573a1d2

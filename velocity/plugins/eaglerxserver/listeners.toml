@@ -64,12 +64,12 @@
 	redirect_legacy_clients_to = ""
 	# Default value is 'server-icon.png', sets the name of the 64x64 PNG file to
 	# display as this listener's server icon, relative to the working directory.
-	server_icon = "server-icon.png"
+	server_icon = ""
 	# List of up to 2 strings, default value is '&6An EaglercraftX server', sets the
 	# contents of the listener's MOTD, which is the text displayed along with the
 	# server_icon when players add this server's listener address to their client's
 	# Multiplayer menu server list.
-	server_motd = ["&4&lsigma ahh server"]
+	server_motd = [""]
 	# Default value is true, is this listener should respond to MOTD queries or not
 	allow_motd = true
 	# Default value is true, is this listener should respond to other query types or

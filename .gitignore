@@ -17,6 +17,9 @@
 /velocity/plugins/ncore
 /velocity/plugins/skinsrestorer
 /velocity/lang
+/velocity/plugins/eaglerxserver/drivers
+/velocity/plugins/eaglerxserver/eagcert
+/velocity/plugins/advancedserverlist/playercache.json
 
 /paper/cache
 /paper/logs
